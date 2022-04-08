@@ -1,4 +1,4 @@
-# Google_Kubernetes_Engine-POC-2022
+# Google Kubernetes Engine POC-2022
 Terraform
 
 Infrastructure as code
