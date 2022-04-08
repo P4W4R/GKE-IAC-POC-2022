@@ -1,0 +1,14 @@
+terraform login
+terraform init
+terraform plan
+terraform apply
+
+--------------------
+
+docker build -t myapp .
+docker tag myapp gcr.io/playground-s-11-db06c9f0/myapp
+docker push gcr.io/playground-s-11-db06c9f0/myapp
+gcloud container clusters get-credentials poc-cluster --zone="us-east1-d"
+deploy to gke gui || kubectl create deployment myapp --image=gcr.io/playground-s-11-db06c9f0/myapp:version1
+kubectl expose deployment myapp --type=LoadBalancer --port 80 --target-port 8080
+kubectl get service myapp
