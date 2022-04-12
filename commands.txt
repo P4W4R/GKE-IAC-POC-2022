@@ -12,3 +12,9 @@ gcloud container clusters get-credentials poc-cluster --zone="us-east1-d"
 deploy to gke gui || kubectl create deployment myapp --image=gcr.io/playground-s-11-db06c9f0/myapp
 kubectl expose deployment myapp --type=LoadBalancer --port 80
 kubectl get service myapp
+
+--------------------
+Terraform Cloud Account
+
+Username - gke-poc-acc
+Password - GKE-poc-2022
