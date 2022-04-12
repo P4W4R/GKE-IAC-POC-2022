@@ -40,14 +40,14 @@ variable "machine_type" {
 }
 
 variable "app_name" {
-  default = "poc-app22"
+  default = "poc-app"
 }
 
 #main
 terraform {
   required_version = "1.1.8"
   backend "remote" {
-    organization = "gke-poc-org-22"
+    organization = "gke-poc-org"
     workspaces {
       name = "gke-poc-workspace"
     }
