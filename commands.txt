@@ -13,6 +13,12 @@ deploy to gke gui || kubectl create deployment myapp --image=gcr.io/playground-s
 kubectl expose deployment myapp --type=LoadBalancer --port 80
 kubectl get service myapp
 
+
+kubectl get pods
+kubectl get replicaset
+kubectl scale deployment myapp --replicas=3
+kubectl get pods
+
 --------------------
 Terraform Cloud Account
 
