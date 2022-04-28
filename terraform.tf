@@ -45,7 +45,7 @@ variable "app_name" {
 
 #main
 terraform {
-  required_version = "1.1.8"
+  required_version = "1.1.9"
   backend "remote" {
     organization = "gke-poc-org"
     workspaces {
